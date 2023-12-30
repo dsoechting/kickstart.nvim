@@ -23,6 +23,11 @@ vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
 vim.o.expandtab = true
 
+vim.o.smartindent = true
+
+-- Set wrap to false
+vim.o.wrap = false
+
 vim.o.scrolloff = 8
 vim.o.updatetime = 50
 vim.o.colorcolumn = "80"
@@ -50,6 +55,10 @@ vim.o.timeoutlen = 300
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
+
+-- split options
+vim.o.splitright = true
+vim.o.splitbelow = true
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true

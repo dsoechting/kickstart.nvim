@@ -19,13 +19,21 @@ keymap.set("n", "N", "Nzzzv")
 -- Delete char without filling register
 keymap.set("n", "x", '"_x')
 -- Paste without losing the yank
-keymap.set("n", "p", '"0p')
+keymap.set("x", "p", "\"_dP")
+-- Leader d to delete to void register
+keymap.set({ 'n', 'v' }, "<leader>d", "\"_d")
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
 -- vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+
+-- Navigate the quickfix list (errors)
+keymap.set('n', '<C-k>', '<cmd>cnext<CR>zz')
+keymap.set('n', '<C-j>', '<cmd>cprex<CR>zz')
+
+keymap.set('n', '<leader>gs', '<cmd>Git<cr>')
 
 -- Window splitting -------------------------------------------
 
