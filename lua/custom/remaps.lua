@@ -34,6 +34,7 @@ keymap.set('n', '<C-k>', '<cmd>cnext<CR>zz')
 keymap.set('n', '<C-j>', '<cmd>cprex<CR>zz')
 
 keymap.set('n', '<leader>gs', '<cmd>Git<cr>')
+keymap.set('n', '<leader>gd', '<cmd>Gvdiff<cr>')
 
 -- Window splitting -------------------------------------------
 

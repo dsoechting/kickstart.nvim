@@ -19,6 +19,7 @@ Search string in files (grep): <leader>F
 
 Toggle file tree: <leader>e
 the file tree has similar keybinds as normal motion to navigate the files. 
+    https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
 Create file/directory while in tree: a
     You will see the text menu at the bottom of the screen
     
