@@ -39,6 +39,7 @@ keymap.set('n', '<C-j>', '<cmd>cprex<CR>zz')
 
 keymap.set('n', '<leader>gs', '<cmd>Git<cr>')
 keymap.set('n', '<leader>gd', '<cmd>Gvdiff<cr>')
+keymap.set('n', '<leader>gp', '<cmd>Git push<cr>')
 
 -- Window splitting -------------------------------------------
 
