@@ -34,8 +34,8 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnos
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 -- Navigate the quickfix list (errors)
-keymap.set('n', '<C-k>', '<cmd>cnext<CR>zz')
-keymap.set('n', '<C-j>', '<cmd>cprex<CR>zz')
+keymap.set('n', '<C-n>', '<cmd>cnext<CR>zz')
+keymap.set('n', '<C-m>', '<cmd>cprev<CR>zz')
 
 keymap.set('n', '<leader>gs', '<cmd>Git<cr>')
 keymap.set('n', '<leader>gd', '<cmd>Gvdiff<cr>')
@@ -53,7 +53,7 @@ keymap.set("n", "<C-p>", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find f
 keymap.set("n", "<leader>F", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 
 -- Open file tree
-vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
+vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
 
 -- Harpoon
 local harpoon = require "harpoon"
