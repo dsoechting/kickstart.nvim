@@ -4,6 +4,7 @@ Most of the text editing vim motions are unchanged or have slight modifications
 The leader key is set to Space or " "
 
 Git menu (powered by fugitive): <leader>gs
+Git diff: <leader>gd
 
 Split vertical/right: <leader>l
 Split horizontal/down: <leader>j
