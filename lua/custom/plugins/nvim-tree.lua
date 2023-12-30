@@ -33,7 +33,5 @@ return {
         custom = { ".DS_Store" },
       },
     })
-
-    vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
   end,
 }

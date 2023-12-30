@@ -46,3 +46,6 @@ keymap.set("n", "<leader>x", "<cmd>close<CR>", { desc = "Close current split" })
 -- Telescope
 keymap.set("n", "<C-p>", "<cmd>Telescope git_files<cr>", { desc = "Fuzzy find files in cwd" })
 keymap.set("n", "<leader>F", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
+
+-- Open file tree
+vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
