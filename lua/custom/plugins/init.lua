@@ -1,8 +1,18 @@
--- You can add your own plugins here or in other files in this directory!
---  I promise not to create any merge conflicts in this directory :)
---
--- See the kickstart.nvim README for more information
+-- Contains plugins that require no config
 
 return {
+  -- Git related plugins
+  'tpope/vim-fugitive',
+  'tpope/vim-rhubarb',
+
+  -- Detect tabstop and shiftwidth automatically
+  'tpope/vim-sleuth',
+
   "christoomey/vim-tmux-navigator",
+
+  -- Useful plugin to show you pending keybinds.
+  { 'folke/which-key.nvim',                lazy = true },
+
+  -- Add indentation guides even on blank lines
+  { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', },
 }
